@@ -62,6 +62,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding>() {
             adapter = memoAdapter
             // 성능 최적화를 위한 고정 크기 설정
             setHasFixedSize(true)
+            // 아이템들의 크기가 고정일때 리싸이클러뷰에 고정이라고 알려주며 성능 최적화 효과 기대
         }
     }
 
