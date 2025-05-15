@@ -1,0 +1,10 @@
+package com.memo.todo_kotlin.domain.usecase
+
+import com.memo.todo_kotlin.domain.repository.MemoRepository
+import javax.inject.Inject
+
+class GetAllMemoUseCase @Inject constructor(
+    private val memoRepository: MemoRepository
+) {
+    operator fun invoke() = memoRepository.getAllMemos()
+}
